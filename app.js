@@ -77,4 +77,4 @@ function showQuestion(){
         answerButton.appendChild(button);
     })
 }
-// geändert - 13.07. 16:40
+// geändert - 13.07.
