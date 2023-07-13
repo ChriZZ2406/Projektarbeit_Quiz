@@ -41,20 +41,23 @@
 	top:212px;
 }
 .Question_Box { 
-	background-color:rgba(206.12500101327896, 53.248959481716156, 53.248959481716156, 1);
+	background-color:rgba(206, 53, 53, 0.300);
 	width:900px;
-	height:95px;
+	height:300px;
 	position:absolute;
 	left:265px;
-	top:564px;
-}
+	top:210px;
+    text-align: center;
+    border-radius: 4px;
+    color: aliceblue;
+    }
 .Antwort_3 { 
 	background-color:rgba(20, 174, 92, 0.300);
 	width:400px;
 	height:100px;
 	position:absolute;
 	left:265px;
-	top:812px;
+	top:712px;
     border: 1px solid #222;
     padding: 10px;
     margin: 10px 0;
@@ -69,7 +72,7 @@
 	height:100px;
 	position:absolute;
 	left:765px;
-	top:812px;
+	top:712px;
     border: 1px solid #222;
     padding: 10px;
     margin: 10px 0;
@@ -84,7 +87,7 @@
 	height:100px;
 	position:absolute;
 	left:765px;
-	top:678px;
+	top:578px;
     border: 1px solid #222;
     padding: 10px;
     margin: 10px 0;
@@ -99,7 +102,7 @@
 	height:100px;
 	position:absolute;
 	left:265px;
-	top:678px;
+	top:578px;
     border: 1px solid #222;
     padding: 10px;
     margin: 10px 0;
