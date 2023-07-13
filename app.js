@@ -6,7 +6,7 @@ const questions = [
     },
     {
         question: 'Welche Farbe hat die Black Order?',
-        answers: ['Blau', 'Gau', 'Lila', 'Schwarz'],
+        answers: ['Blau', 'Grau', 'Lila', 'Schwarz'],
         correctAnswer: 'Schwarz'
     },
     {
