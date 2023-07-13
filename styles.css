@@ -15,7 +15,7 @@
 	left:0px;
 	top:0px;
 }
-.e30_70 { 
+.Hintergrund_Bild { 
 	width:1440px;
 	height:1024px;
 	position:fixed;
@@ -24,7 +24,7 @@
 	min-width: 100%;
     min-height: 100%;
 }
-.e30_71 { 
+.linke_Box { 
 	background-color:rgba(125.37500202655792, 62.165105044841766, 62.165105044841766, 0.4000000059604645);
 	width:200px;
 	height:600px;
@@ -32,7 +32,7 @@
 	left:0px;
 	top:212px;
 }
-.e30_72 { 
+.rechte_Box { 
 	background-color:rgba(125.37500202655792, 62.165105044841766, 62.165105044841766, 0.4000000059604645);
 	width:200px;
 	height:600px;
@@ -40,7 +40,7 @@
 	left:1240px;
 	top:212px;
 }
-.e30_73 { 
+.Question_Box { 
 	background-color:rgba(206.12500101327896, 53.248959481716156, 53.248959481716156, 1);
 	width:900px;
 	height:95px;
