@@ -15,13 +15,17 @@
 	left:0px;
 	top:0px;
 }
-.e30_70 { 
-	background-image: url(images/emily_morter_8xaa0f9yqne_unsplash_1.png) no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-}
+.bg {
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	  
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
+	width:1440px;
+	height:1024px;
+  }
 .e30_71 { 
 	background-color:rgba(125.37500202655792, 62.165105044841766, 62.165105044841766, 0.4000000059604645);
 	width:200px;
