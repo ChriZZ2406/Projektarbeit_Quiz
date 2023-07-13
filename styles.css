@@ -48,7 +48,7 @@
 	left:265px;
 	top:664px;
 }
-.e30_74 { 
+.Antwort_3 { 
 	background-color:rgba(20, 174, 92, 0.300);
 	width:400px;
 	height:100px;
@@ -63,7 +63,7 @@
     cursor: pointer;
     color: aliceblue;
 }
-.e30_77 { 
+.Antwort_4 { 
 	background-color:rgba(20, 174, 92, 0.300);
 	width:400px;
 	height:100px;
@@ -78,7 +78,7 @@
     cursor: pointer;
     color: aliceblue;
 }
-.e30_76 { 
+.Antwort_2 { 
 	background-color:rgba(20, 174, 92, 0.300);
 	width:400px;
 	height:100px;
@@ -93,7 +93,7 @@
     cursor: pointer;
     color: aliceblue;
 }
-.e30_75 { 
+.Antwort_1 { 
 	background-color:rgba(20, 174, 92, 0.300);
 	width:400px;
 	height:100px;
@@ -112,7 +112,7 @@
 button:hover {
     background-color:rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
 }
-
+/* Alt last TextFieldButton
 .e46_37 { 
 	color:rgba(255, 255, 255, 1);
 	width:199px;
@@ -160,8 +160,8 @@ button:hover {
 	text-align:center;
 	font-size:40px;
 	letter-spacing:0;
-}
-.e30_78 { 
+} */
+.Kreis_Timer { 
 	border-radius:500px;
 	background-color:rgba(155.24899899959564, 153.30838233232498, 153.30838233232498, 1);
 	width:150px;
@@ -170,7 +170,7 @@ button:hover {
 	left:25px;
 	top:280px;
 }
-.e45_30 { 
+.Kreis_Richtig { 
 	border-radius:500px;
 	background-color:rgba(18.474213480949402, 227.37499594688416, 14.21093724668026, 1);
 	width:150px;
@@ -179,7 +179,7 @@ button:hover {
 	left:1275px;
 	top:280px;
 }
-.e45_31 { 
+.Kreis_Falsch { 
 	border-radius:500px;
 	background-color:rgba(218.87500405311584, 30.095312297344208, 30.095312297344208, 1);
 	width:150px;
@@ -188,7 +188,7 @@ button:hover {
 	left:1275px;
 	top:609px;
 }
-.e45_26 { 
+.Kreis_QPH { 
 	border-radius:500px;
 	background-color:rgba(155.00000596046448, 153.00000607967377, 153.00000607967377, 1);
 	width:150px;
@@ -197,7 +197,7 @@ button:hover {
 	left:25px;
 	top:609px;
 }
-.e30_79 { 
+.Timer { 
 	color:rgba(255, 255, 255, 1);
 	width:109px;
 	height:48px;
@@ -209,7 +209,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.e45_29 { 
+.Richtig { 
 	color:rgba(255, 255, 255, 1);
 	width:130px;
 	height:48px;
@@ -221,7 +221,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.e45_27 { 
+.Frage { 
 	color:rgba(255, 255, 255, 1);
 	width:109px;
 	height:48px;
@@ -233,7 +233,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.e45_32 { 
+.Falsch { 
 	color:rgba(255, 255, 255, 1);
 	width:123px;
 	height:48px;
@@ -245,7 +245,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.e30_80 { 
+.TPH { 
 	color:rgba(206.12500101327896, 53.248959481716156, 53.248959481716156, 1);
 	width:81px;
 	height:48px;
@@ -257,7 +257,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.e45_33 { 
+.RPH { 
 	color:rgba(255, 255, 255, 1);
 	width:81px;
 	height:48px;
@@ -269,7 +269,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.e45_34 { 
+.WPH { 
 	color:rgba(255, 255, 255, 1);
 	width:93px;
 	height:48px;
@@ -281,7 +281,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.e45_28 { 
+.QPH { 
 	color:rgba(30.00000011175871, 30.00000011175871, 30.00000011175871, 1);
 	width:86px;
 	height:48px;
@@ -293,7 +293,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.e46_35 { 
+.Quest_Txt { 
 	color:rgba(255, 255, 255, 1);
 	width:171px;
 	height:48px;
