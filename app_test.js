@@ -1,8 +1,12 @@
 const questions = [
     {
         question: 'Wer ist der coolste?!',
-        answers: ['Rick', 'Popeye', 'Teletubby', 'Captain Hero'],
-        correctAnswer: 'Rick'
+        answers: [
+            { text: "Rick", correct: true},
+            { text: "Popeye", correct: false},
+            { text: "Teletubby", correct: false},
+            { text: "Captain Hero", correct: false},
+        ]
     },
     {
         question: 'Wer ist der coolste?!',
@@ -75,10 +79,10 @@ function startGame() {
 
 function startTimer() {
     let timeLeft = 15;
-    timerElement.innerText = `Timer: ${timeLeft}`;
+    timerElement.innerText = `${timeLeft}`;
     countdown = setInterval(() => {
         timeLeft--;
-        timerElement.innerText = `Timer: ${timeLeft}`;
+        timerElement.innerText = `${timeLeft}`;
         if(timeLeft <= 0) {
             clearInterval(countdown);
             Array.from(answerButtonsElement.children).forEach(button => {
