@@ -47,7 +47,7 @@
 	position:absolute;
 	left:265px;
 	top:210px;
-    text-align: center;
+    text-align:center;
     border-radius: 4px;
     color: aliceblue;
     }
@@ -298,13 +298,19 @@ button:hover {
 }
 .Quest_Txt { 
 	color:rgba(255, 255, 255, 1);
-	width:171px;
+	width:800px;
 	height:48px;
 	position:absolute;
-	left:634px;
-	top: 310px;
+	left:300px;
+	top:310px;
 	font-family:Inter;
 	text-align:center;
 	font-size:40px;
 	letter-spacing:0;
+}
+.correct{
+    background: rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
+}
+.incorrect{
+    background: rgba(206.12500101327896, 53.248959481716156, 53.248959481716156, 1);
 }
