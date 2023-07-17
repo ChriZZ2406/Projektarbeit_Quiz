@@ -116,14 +116,17 @@ button:hover {
 	left:1275px;
 	top:609px;
 }
-.Kreis_QPH { 
-	border-radius:500px;
-	background-color:rgba(155.00000596046448, 153.00000607967377, 153.00000607967377, 1);
-	width:150px;
-	height:150px;
-	position:absolute;
-	left:25px;
-	top:609px;
+.Kreis_QPH {
+	border-radius: 500px;
+	background-color: rgba(155.00000596046448, 153.00000607967377, 153.00000607967377, 1);
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 25px;
+	top: 609px;
+	cursor: pointer;
+	pointer-events: auto;
+  
 }
 .Timer { 
 	color:rgba(255, 255, 255, 1);
@@ -149,7 +152,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.Frage { 
+.Start { 
 	color:rgba(255, 255, 255, 1);
 	width:109px;
 	height:48px;
