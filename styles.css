@@ -51,119 +51,44 @@
     border-radius: 4px;
     color: aliceblue;
     }
-.Antwort_3 { 
-	background-color:rgba(20, 174, 92, 0.300);
-	width:400px;
-	height:100px;
-	position:absolute;
-	left:265px;
-	top:712px;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 4px;
-    cursor: pointer;
-    color: aliceblue;
-}
-.Antwort_4 { 
-	background-color:rgba(20, 174, 92, 0.300);
-	width:400px;
-	height:100px;
-	position:absolute;
-	left:765px;
-	top:712px;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 4px;
-    cursor: pointer;
-    color: aliceblue;
-}
-.Antwort_2 { 
-	background-color:rgba(20, 174, 92, 0.300);
-	width:400px;
-	height:100px;
-	position:absolute;
-	left:765px;
-	top:578px;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 4px;
-    cursor: pointer;
-    color: aliceblue;
-}
-.Antwort_1 { 
-	background-color:rgba(20, 174, 92, 0.300);
-	width:400px;
-	height:100px;
-	position:absolute;
-	left:265px;
-	top:578px;
-    border: 1px solid #222;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 4px;
-    cursor: pointer;
-    color: aliceblue;
-}
+	
+	.btn {
+		background-color: rgba(20, 174, 92, 0.300);
+		width: 400px;
+		height: 100px;
+		position: absolute;
+		left: 265px;
+		border: 1px solid #222;
+		padding: 10px;
+		margin: 10px 0;
+		text-align: center;
+		border-radius: 4px;
+		cursor: pointer;
+		color: aliceblue;
+	  }
+	  
+	  .btn:nth-child(1) {
+		top: 560px;
+	  }
+	  
+	  .btn:nth-child(2) {
+		top: 560px;
+		left: 765px;
+	  }
+	  
+	  .btn:nth-child(3) {
+		top: 680px;
+	  }
+	  
+	  .btn:nth-child(4) {
+		top: 680px;
+		left: 765px;
+	  }
 
 button:hover {
     background-color:rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
 }
-/* Alt last TextFieldButton
-.e46_37 { 
-	color:rgba(255, 255, 255, 1);
-	width:199px;
-	height:48px;
-	position:absolute;
-	left:365px;
-	top:938px;
-	font-family:Inter;
-	text-align:center;
-	font-size:40px;
-	letter-spacing:0;
-}
-.e50_26 { 
-	color:rgba(255, 255, 255, 1);
-	width:199px;
-	height:48px;
-	position:absolute;
-	left:365px;
-	top:804px;
-	font-family:Inter;
-	text-align:center;
-	font-size:40px;
-	letter-spacing:0;
-}
-.e50_27 { 
-	color:rgba(255, 255, 255, 1);
-	width:199px;
-	height:48px;
-	position:absolute;
-	left:865px;
-	top:938px;
-	font-family:Inter;
-	text-align:center;
-	font-size:40px;
-	letter-spacing:0;
-}
-.e46_38 { 
-	color:rgba(255, 255, 255, 1);
-	width:199px;
-	height:48px;
-	position:absolute;
-	left:865px;
-	top:804px;
-	font-family:Inter;
-	text-align:center;
-	font-size:40px;
-	letter-spacing:0;
-} */
+
 .Kreis_Timer { 
 	border-radius:500px;
 	background-color:rgba(155.24899899959564, 153.30838233232498, 153.30838233232498, 1);
