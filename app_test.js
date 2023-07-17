@@ -1,3 +1,4 @@
+/*
 const questions = [
      {
         question: 'Wer ist der coolste?!',
@@ -192,10 +193,10 @@ const questions = [
   });
   
   startGame();
-  
-  
 
-/*const questions = [
+  */
+
+  const questions = [
     {
         question: 'Wer ist der coolste?!',
         answers: [
@@ -286,23 +287,29 @@ const questions = [
             { text: "Fahrrad", correct: false }
         ]
     }
-    
-    
-];
-
-const questionElement = document.getElementById("question-box");
+  ];
+  
+  const questionElement = document.getElementById("question-box");
 const answerButtonsElement = document.getElementById("answer-buttons");
 const timerElement = document.getElementById("timer");
+const startButton = document.getElementById("start-button");
+const startButtonText = document.getElementById("start-button-text");
 
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
 let countdown;
 
+startButton.addEventListener('click', () => {
+    startGame();
+    startButton.style.visibility = 'hidden';
+    startButtonText.style.visibility = 'hidden';
+});
+
 function startGame() {
     score = 0;
     currentQuestionIndex = 0;
-    nextButton.innerHTKL = 0;
-    showQuestion();
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
 }
 
 function startTimer() {
@@ -313,8 +320,9 @@ function startTimer() {
         timerElement.innerText = `${timeLeft}`;
         if(timeLeft <= 0) {
             clearInterval(countdown);
+            timerElement.innerText = 'Zeit abgelaufen!';
             Array.from(answerButtonsElement.children).forEach(button => {
-                if (button.dataset.correct) selectAnswer({ target: button });
+                button.disabled = true;
             });
         }
     }, 1000);
@@ -322,68 +330,65 @@ function startTimer() {
 
 function setNextQuestion() {
     resetState();
-    showQuestion(shuffledQuestions[currentQuestionIndex]);
+    currentQuestionIndex++;
+    if (currentQuestionIndex < shuffledQuestions.length) {
+        showQuestion(shuffledQuestions[currentQuestionIndex]);
+    } else {
+        showScore();
+        startButton.style.visibility = 'visible';
+        startButtonText.style.visibility = 'visible';
+        startButtonText.innerText = 'Neustart';
+    }
 }
 
-function showQuestion() {
-    let currentQuestion = questions [currentQuestionIndex];
-    let questionNo = currentQuestionIndex + 1;
-    questionElement.innerHTKL = questionNo + ". " + currentQuestion.question;
-
-    currentQuestion.answers.forEach(answer => {
-        const button = document.createElement("button");
-        button.innerHTML = answer.text;
-        button.classList.add("btn");
-        answerButtonsElement.appendChild(button);
-        if(answer.correct){
-            button.dataset.correct =answer.correct;
-        }
-        button.addEventListener("click", selectAnswer);
+function showQuestion(question) {
+    questionElement.innerText = question.question;
+    question.answers.forEach((answer, index) => {
+        const button = document.getElementById(`answer-${index + 1}`);
+        button.innerText = answer.text;
+        button.dataset.correct = answer.correct;
+        button.disabled = false;
+        button.addEventListener('click', selectAnswer);
     });
+    startTimer();
 }
-
 
 function selectAnswer(e) {
     clearInterval(countdown);
-    const selectedBtn = e.target;
-    const isCorrect = selectBtn.dataset.correct === "true";
-    if(isCorrect){
-        selectedBtn.classList.add("correct");
+    const selectedButton = e.target;
+    const correct = selectedButton.dataset.correct;
+    setStatusClass(selectedButton, correct);
+    if (correct) {
         score++;
-    } else {
-        selectedBtn.classList.add("incorrect");
     }
-    Array.from(answerButtons.children).forEach(button => {
-        if(button.dataset.correct === "true"){
-            button.classList.add("correct");
-        }
+    setTimeout(setNextQuestion, 1000);
+}
+
+function resetState() {
+    clearInterval(countdown);
+    timerElement.innerText = "15";
+    Array.from(answerButtonsElement.children).forEach(button => {
+        button.innerText = "";
+        clearStatusClass(button);
         button.disabled = true;
-    })
-    nextButton.style.display = "block";
+        button.removeEventListener('click', selectAnswer);
+    });
 }
 
-
-function showScore(){
-    resetState();
-    questionElement.innerHTML = 'du hast ${score} von ${questions.length} möglichen Punkten!';
-    nextButton.innerHTKL = "Neustart";
-    nextButton.style.display = "block";
+function showScore() {
+    questionElement.innerText = 'Du hast ' + score + ' von ' + questions.length + ' möglichen Punkten!';
 }
 
-function handleNextButton(){
-    currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
-        showQuestion();
-    }else{
-        showScore();
+function setStatusClass(element, correct) {
+    clearStatusClass(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('incorrect');
     }
 }
 
-nextButton.addEventListener("click", () =>{
-    if(currentQuestionIndex < questions.length){
-        handleNextButton();
-    }else{
-        startGame();
-    }
-});
-*/
+function clearStatusClass(element) {
+    element.classList.remove('correct');
+    element.classList.remove('incorrect');
+}
