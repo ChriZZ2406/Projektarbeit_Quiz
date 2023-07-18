@@ -97,7 +97,7 @@ button:hover {
 	position:absolute;
 	left:1285px;
 	top:232px;
-	font-family:Inter;
+	font-family: 'Orbitron', sans-serif;
 	text-align:left;
 	font-size:40px;
 	letter-spacing:0;
@@ -118,7 +118,7 @@ button:hover {
 	position:absolute;
 	left:1290px;
 	top:331px;
-	font-family:Inter;
+	font-family: 'Orbitron', sans-serif;
 	text-align:left;
 	font-size:40px;
 	letter-spacing:0;
@@ -157,17 +157,18 @@ button:hover {
   
 }
 .Timer { 
-	color:rgba(255, 255, 255, 1);
-	width:109px;
-	height:48px;
-	position:absolute;
-	left:45px;
-	top:232px;
-	font-family:Inter;
-	text-align:left;
-	font-size:40px;
-	letter-spacing:0;
+    color:rgba(255, 255, 255, 1);
+    width:109px;
+    height:48px;
+    position:absolute;
+    left:45px;
+    top:232px;
+    font-family: 'Orbitron', sans-serif;
+    text-align:center;
+    font-size:40px;
+    letter-spacing:0;
 }
+
 
 .Start { 
 	color:rgba(255, 255, 255, 1);
@@ -176,7 +177,7 @@ button:hover {
 	position:absolute;
 	left:45px;
 	top:561px;
-	font-family:Inter;
+	font-family: 'Orbitron', sans-serif;
 	text-align:left;
 	font-size:40px;
 	letter-spacing:0;
@@ -188,7 +189,7 @@ button:hover {
 	position:absolute;
 	left:1295px;
 	top:561px;
-	font-family:Inter;
+	font-family: 'Orbitron', sans-serif;
 	text-align:left;
 	font-size:40px;
 	letter-spacing:0;
@@ -200,7 +201,7 @@ button:hover {
 	position:absolute;
 	left:59px;
 	top:331px;
-	font-family:Inter;
+	font-family: 'Orbitron', sans-serif;
 	text-align:center;
 	font-size:40px;
 	letter-spacing:0;
@@ -213,7 +214,7 @@ button:hover {
 	position:absolute;
 	left:1303px;
 	top:660px;
-	font-family:Inter;
+	font-family: 'Orbitron', sans-serif;
 	text-align:left;
 	font-size:40px;
 	letter-spacing:0;
@@ -225,7 +226,7 @@ button:hover {
 	position:absolute;
 	left:59px;
 	top:660px;
-	font-family:Inter;
+	font-family: 'Orbitron', sans-serif;
 	text-align:left;
 	font-size:40px;
 	letter-spacing:0;
@@ -237,7 +238,7 @@ button:hover {
 	position:absolute;
 	left:300px;
 	top:310px;
-	font-family:Inter;
+	font-family: 'Orbitron', sans-serif;
 	text-align:center;
 	font-size:40px;
 	letter-spacing:0;
