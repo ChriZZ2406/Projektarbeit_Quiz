@@ -40,14 +40,14 @@ const questions = [
         correctAnswer: 'Im Ofen'
     },
     {
-        question: 'Warum mach ich das?',
-        answers: ['*Affe der sich die Augen zuhält*', 'Weil ichs kann!', 'Weiß ich selbst net...', 'Nächste Frage bitte!'],
-        correctAnswer: 'Weil ichs kann!'
+        question: 'Ist der Himmel blau?',
+        answers: ['*Auf kein Fall, der is Scharlachrot!', 'Ja', 'Weiß ich selbst net...', 'Nein'],
+        correctAnswer: 'Ja'
     },
     {
-        question: 'Na wie is das Quiz?',
-        answers: ['Welches Quiz?', 'Bahnhof', 'nope', 'Fahrrad'],
-        correctAnswer: 'Welches Quiz?'
+        question: 'Ist dir das zu blöd?',
+        answers: ['Merkt man das?', 'Nein', 'Ja', 'Kuckuck'],
+        correctAnswer: 'Merkt man das?'
     }
   ];
   
