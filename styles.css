@@ -90,6 +90,41 @@ button:hover {
     background-color:rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
 }
 
+.Score_Überschrift { 
+	color:rgba(255, 255, 255, 1);
+	width:130px;
+	height:48px;
+	position:absolute;
+	left:1285px;
+	top:232px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+.Score_Kreis { 
+	border-radius:500px;
+	background-color:rgba(18.474213480949402, 227.37499594688416, 14.21093724668026, 1);
+	width:150px;
+	height:150px;
+	position:absolute;
+	left:1275px;
+	top:280px;
+}
+.Score_Zahl { 
+	color:rgb(117, 18, 246);
+	width:81px;
+	height:48px;
+	position:absolute;
+	left:1290px;
+	top:331px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+
+
 .Kreis_Timer { 
 	border-radius:500px;
 	background-color:rgba(155.24899899959564, 153.30838233232498, 153.30838233232498, 1);
@@ -99,15 +134,7 @@ button:hover {
 	left:25px;
 	top:280px;
 }
-.Kreis_Richtig { 
-	border-radius:500px;
-	background-color:rgba(18.474213480949402, 227.37499594688416, 14.21093724668026, 1);
-	width:150px;
-	height:150px;
-	position:absolute;
-	left:1275px;
-	top:280px;
-}
+
 .Kreis_Falsch { 
 	border-radius:500px;
 	background-color:rgba(218.87500405311584, 30.095312297344208, 30.095312297344208, 1);
@@ -141,18 +168,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.Richtig { 
-	color:rgba(255, 255, 255, 1);
-	width:130px;
-	height:48px;
-	position:absolute;
-	left:1285px;
-	top:232px;
-	font-family:Inter;
-	text-align:left;
-	font-size:40px;
-	letter-spacing:0;
-}
+
 .Start { 
 	color:rgba(255, 255, 255, 1);
 	width:109px;
@@ -189,18 +205,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.RPH { 
-	color:rgba(255, 255, 255, 1);
-	width:81px;
-	height:48px;
-	position:absolute;
-	left:1309px;
-	top:331px;
-	font-family:Inter;
-	text-align:left;
-	font-size:40px;
-	letter-spacing:0;
-}
+
 .WPH { 
 	color:rgba(255, 255, 255, 1);
 	width:93px;
