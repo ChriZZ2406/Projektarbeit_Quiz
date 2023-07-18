@@ -1,24 +1,20 @@
+
+.container {
+	position: relative;
+}
+
 .alles_Box { 
 	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	width:100%;
-	height:100%;
 	position:absolute;
-	left:0px;
-	top:0px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	top:50%;
+	width:100%;
+	text-align: center;
 }
 
 .Hintergrund_Bild { 
-	width:1440px;
-	height:1024px;
-	position:fixed;
-	left:0px;
-	top:0px;
-	min-width: 100%;
-    min-height: 100%;
+	width: 100%;
+	height: auto;
+	position: fixed;
 }
 .linke_Box { 
 	background-color:rgba(125.37500202655792, 62.165105044841766, 62.165105044841766, 0.4000000059604645);
@@ -47,7 +43,18 @@
     border-radius: 4px;
     color: aliceblue;
     }
-	
+	.Question_Txt { 
+		color:rgba(255, 255, 255, 1);
+		width:800px;
+		height:48px;
+		position:absolute;
+		left:300px;
+		top:343px;
+		font-family:Inter;
+		text-align:center;
+		font-size:30px;
+		letter-spacing:0;
+	}
 	.btn {
 		background-color: rgba(20, 174, 92, 0.300);
 		width: 400px;
@@ -62,6 +69,7 @@
 		cursor: pointer;
 		color: aliceblue;
 		font-size: 30px;
+		font-family: Inter;
 	  }
 	  
 	  .btn:nth-child(1) {
@@ -218,18 +226,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.Quest_Txt { 
-	color:rgba(255, 255, 255, 1);
-	width:800px;
-	height:48px;
-	position:absolute;
-	left:300px;
-	top:310px;
-	font-family:Inter;
-	text-align:center;
-	font-size:40px;
-	letter-spacing:0;
-}
+
 .correct{
     background: rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
 }

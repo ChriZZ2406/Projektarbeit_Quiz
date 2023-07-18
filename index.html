@@ -10,14 +10,14 @@
 </head>
 
 <body>
-  <img class="Hintergrund_Bild"
-    src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5184&q=3456"
-    alt="Background">
+  <div class="container">
+    <img class="Hintergrund_Bild" src="https://images.unsplash.com/photo-1484069560501-87d72b0c3669?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=5184&q=3456" alt="Background" width="1440" height="1024">
   <div class=alles_Box>
     <div class="Quiz_Fenster">
     <div class="linke_Box"></div>
     <div class="rechte_Box"></div>
     <div class="Question_Box" id="question"></div>
+    <span class="Question_Txt" id="question-box"></span>
     <div id="answer-buttons">
       <button class="btn">AnswerTxt1</button>
       <button class="btn">AnswerTxt2</button>
@@ -27,8 +27,7 @@
     <div class="Kreis_Timer"></div>
     <div class="Kreis_Richtig"></div>
     <div class="Kreis_Falsch"></div>
-    <div class="Kreis_QPH"></div>
-    <span class="Timer">Timer</span>
+    <div class="Kreis_QPH"></div><span class="Timer">Timer</span>
     <span class="Richtig">Score</span>
     <span class="Frage">Frage</span>
     <span class="Falsch">Falsch</span>
@@ -36,7 +35,6 @@
     <span class="RPH">RPH</span>
     <span class="WPH">WPH</span>
     <span class="QPH">QPH</span>
-    <span class="Quest_Txt" id="question-box"></span>
   </div>
   </div>
   <script src="app.js"></script>
