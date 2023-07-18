@@ -1,5 +1,5 @@
 const questions = [
-    {
+        {
         question: 'Wer ist der coolste?!',
         answers: ['Rick', 'Popeye', 'Teletubby', 'Captain Hero'],
         correctAnswer: 'Rick'
@@ -49,29 +49,61 @@ const questions = [
         answers: ['Welches Quiz?', 'Bahnhof', 'nope', 'Fahrrad'],
         correctAnswer: 'Welches Quiz?'
     }
-    
-];
-
+  ];
+  
 const questionElement = document.getElementById("question-box");
 const answerButtonsElement = document.getElementById("answer-buttons");
 const timerElement = document.getElementById("timer");
+const scoreElement = document.querySelector(".Score_Zahl");
+const skipButton = document.getElementById("skip");
+const startButton = document.querySelector(".QPH");
+
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
 let countdown;
 let questionCount = 0;
-let gameEnded = false; // Neue Variable für das Spielende
+let gameEnded = false;
+
+skipButton.addEventListener("click", () => {
+  questionCount++;
+  if (shuffledQuestions.length > currentQuestionIndex + 1 && questionCount < 10) {
+    clearInterval(countdown);
+    alert(`Skipped! - Kein Punkt!`);
+    currentQuestionIndex++;
+    setNextQuestion();
+    startTimer();
+  } else {
+    if (!gameEnded) {
+      gameEnded = true;
+      alert(`Quiz beendet! - Final Score ${score} von 10.`);
+      startButton.innerText = "Start";
+    }
+  }
+});
+
+startButton.addEventListener("click", () => {
+  startButton.innerText = "Running...";
+  if (gameEnded || !shuffledQuestions) {
+    startGame();
+  }
+});
+
 function startGame() {
   score = 0;
+  scoreElement.textContent = `${score}/10`;
   shuffledQuestions = questions.sort(() => Math.random() - 0.5);
   currentQuestionIndex = 0;
   setNextQuestion();
   startTimer();
+  questionCount = 0;
+  gameEnded = false;
 }
+
 function startTimer() {
   let timeLeft = 15;
   timerElement.innerText = `${timeLeft}`;
   countdown = setInterval(() => {
-   timeLeft--;
+    timeLeft--;
     timerElement.innerText = `${timeLeft}`;
     if (timeLeft === 0) {
       clearInterval(countdown);
@@ -79,6 +111,7 @@ function startTimer() {
     }
   }, 1000);
 }
+
 function setNextQuestion() {
   const question = shuffledQuestions[currentQuestionIndex];
   questionElement.innerText = question.question;
@@ -94,26 +127,31 @@ function setNextQuestion() {
     answerButtonsElement.appendChild(button);
   });
 }
+
 function selectAnswer(e) {
   clearInterval(countdown);
   let selectedButton;
+  let correct;
+
   if (e) {
     selectedButton = e.target;
+    correct = selectedButton.dataset.correct;
   } else {
     selectedButton = answerButtonsElement.children[0];
+    correct = false;  // Wenn die Zeit abläuft, wird die Antwort als falsch betrachtet
   }
-  const correct = selectedButton.dataset.correct;
-  
+
   // Überprüfen, ob eine Antwort ausgewählt wurde
-  if (selectedButton) {
+  if (selectedButton && !gameEnded) {
     if (correct) {
       score++;
-      alert(`Richtig! Dein Punktestand ist jetzt ${score} Punkt(e) von 10 möglichen.`);
+      scoreElement.textContent = `${score}/10`;
+      alert(`Richtig!`);
     } else {
-      alert(`Falsch!/Zu langsam! Dein Punktestand bleibt bei ${score} von 10.`);
+      alert(`Falsch!/Zu langsam! - Score unverändert.`);
     }
   }
-  
+
   questionCount++;
   if (shuffledQuestions.length > currentQuestionIndex + 1 && questionCount < 10) {
     currentQuestionIndex++;
@@ -122,187 +160,18 @@ function selectAnswer(e) {
   } else {
     if (!gameEnded) {
       gameEnded = true;
-      alert(`Quiz beendet! Dein finaler Punktestand ist ${score} von 10.`);
+      alert(`Quiz beendet! - Final Score ${score} von 10.`);
+      startButton.innerText = "Start";
     }
   }
-}
-function resetState() {
-  answerButtonsElement.innerHTML = "";
-}
-startGame();
 
-
-/*
-function startTimer() {
-  let timeLeft = 15;
-  timerElement.innerText = `${timeLeft}`;
-  countdown = setInterval(() => {
-    timeLeft--;
-    timerElement.innerText = `${timeLeft}`;
-    if (timeLeft <= 0) {
-      clearInterval(countdown);
-      Array.from(answerButtonsElement.children).forEach((button) => {
-        if (button.dataset.correct) selectAnswer({ target: button });
-      });
-    }
-  }, 1000);
-}
-function setNextQuestion() {
-  resetState();
-  showQuestion(shuffledQuestions[currentQuestionIndex]);
-}
-function showQuestion(question) {
-  questionElement.innerText = question.question;
-  question.answers.forEach((answer) => {
-    const button = document.createElement("button");
-    button.innerText = answer;
-    button.classList.add("btn");
-    if (answer === question.correctAnswer) {
-      button.dataset.correct = true;
-    }
-    button.addEventListener("click", selectAnswer);
-    answerButtonsElement.appendChild(button);
-  });
-}
-function selectAnswer(e) {
-  clearInterval(countdown);
-  let selectedButton;
-  if (e) {
-    selectedButton = e.target;
-  } else {
-    selectedButton = answerButtonsElement.children[0];
-  }
-  const correct = selectedButton.dataset.correct;
-  
-  // Überprüfen, ob eine Antwort ausgewählt wurde
-  if (selectedButton) {
-    if (correct) {
-      score++;
-      alert(`Richtig! Dein Punktestand ist jetzt ${score} Punkt(e) von 10 möglichen.`);
-    } else {
-      alert(`Falsch! Dein Punktestand bleibt bei ${score} von 10.`);
-    }
-  }
-  
-  questionCount++;
-  if (shuffledQuestions.length > currentQuestionIndex + 1 && questionCount < 10) {
-    currentQuestionIndex++;
-    setNextQuestion();
-    startTimer();
-  } else {
-    if (!gameEnded) {
-      gameEnded = true;
-      alert(`Quiz beendet! Dein finaler Punktestand ist ${score} von 10.`);
-      resetQuiz();
-    }
-  }
-}
-function resetState() {
-  while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-  }
-}
-function resetQuiz() {
-  score = 0;
-  currentQuestionIndex = 0;
-  questionCount = 0;
-  setNextQuestion();
-}
-function startGame() {
-  startTimer();
-}
-
-*/
-/*
-function startGame() {
-  score = 0;
-  shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-  currentQuestionIndex = 0;
-  setNextQuestion();
-  startTimer();
-}
-
-function startTimer() {
-  let timeLeft = 15;
-  timerElement.innerText = `${timeLeft}`;
-  countdown = setInterval(() => {
-    timeLeft--;
-    timerElement.innerText = `${timeLeft}`;
-    if (timeLeft <= 0) {
-      clearInterval(countdown);
-      Array.from(answerButtonsElement.children).forEach((button) => {
-        if (button.dataset.correct) selectAnswer({ target: button });
-      });
-    }
-  }, 1000);
-}
-
-function setNextQuestion() {
-  resetState();
-  showQuestion(shuffledQuestions[currentQuestionIndex]);
-}
-
-function showQuestion(question) {
-  questionElement.innerText = question.question;
-  question.answers.forEach((answer) => {
-    const button = document.createElement("button");
-    button.innerText = answer;
-    button.classList.add("btn");
-    if (answer === question.correctAnswer) {
-      button.dataset.correct = true;
-    }
-    button.addEventListener("click", selectAnswer);
-    answerButtonsElement.appendChild(button);
-  });
-}
-
-function selectAnswer(e) {
-  clearInterval(countdown);
-  let selectedButton;
-  if (e) {
-    selectedButton = e.target;
-  } else {
-    selectedButton = answerButtonsElement.children[0];
-  }
-  const correct = selectedButton.dataset.correct;
-  
-  // Überprüfen, ob eine Antwort ausgewählt wurde
-  if (selectedButton) {
-    if (correct) {
-      score++;
-      alert(`Richtig! Dein Punktestand ist jetzt ${score} Punkt(e) von 10 möglichen.`);
-    } else {
-      alert(`Falsch! Dein Punktestand bleibt bei ${score} von 10.`);
-    }
-  }
-  
-  questionCount++;
-  if (shuffledQuestions.length > currentQuestionIndex + 1 && questionCount < 10) {
-    currentQuestionIndex++;
-    setNextQuestion();
-    startTimer();
-  } else {
-    if (!gameEnded) {
-      gameEnded = true;
-      alert(`Quiz beendet! Dein finaler Punktestand ist ${score} von 10.`);
-      resetQuiz();
-    }
+  if(gameEnded) {
+    startButton.innerText = "Start";  // Setzt die Beschriftung des Start-Buttons zurück, wenn das Spiel beendet ist
   }
 }
 
 function resetState() {
-  while (answerButtonsElement.firstChild) {
-    answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-  }
+  answerButtonsElement.innerHTML = "";
 }
 
-function resetQuiz() {
-  score = 0;
-  currentQuestionIndex = 0;
-  questionCount = 0;
-  setNextQuestion();
-}
-
-startGame();
-*/
-
+// startGame();  // Das Spiel startet nicht mehr automatisch beim Laden der Seite
