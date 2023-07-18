@@ -47,7 +47,7 @@ const questions = [
     {
         question: 'Ist dir das zu blöd?',
         answers: ['Merkt man das?', 'Nein', 'Ja', 'Kuckuck'],
-        correctAnswer: 'Merkt man das?'
+        correctAnswer: 'Ja'
     }
   ];
   
