@@ -65,6 +65,7 @@
 		border-radius: 4px;
 		cursor: pointer;
 		color: aliceblue;
+		font-size: 30px;
 	  }
 	  
 	  .btn:nth-child(1) {
