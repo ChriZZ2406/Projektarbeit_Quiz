@@ -50,6 +50,8 @@
     text-align:center;
     border-radius: 4px;
     color: aliceblue;
+	font-size: 42px;
+	text-shadow: 1px 1px black;
     }
 	
 	.btn {
@@ -90,6 +92,41 @@ button:hover {
     background-color:rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
 }
 
+.Score_Überschrift { 
+	color:rgba(255, 255, 255, 1);
+	width:130px;
+	height:48px;
+	position:absolute;
+	left:1285px;
+	top:232px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+.Score_Kreis { 
+	border-radius:500px;
+	background-color:rgba(18.474213480949402, 227.37499594688416, 14.21093724668026, 1);
+	width:150px;
+	height:150px;
+	position:absolute;
+	left:1275px;
+	top:280px;
+}
+.Score_Zahl { 
+	color:rgb(117, 18, 246);
+	width:81px;
+	height:48px;
+	position:absolute;
+	left:1290px;
+	top:331px;
+	font-family:Inter;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+
+
 .Kreis_Timer { 
 	border-radius:500px;
 	background-color:rgba(155.24899899959564, 153.30838233232498, 153.30838233232498, 1);
@@ -99,27 +136,21 @@ button:hover {
 	left:25px;
 	top:280px;
 }
-.Kreis_Richtig { 
+
+.Kreis_Skip { 
 	border-radius:500px;
-	background-color:rgba(18.474213480949402, 227.37499594688416, 14.21093724668026, 1);
-	width:150px;
-	height:150px;
-	position:absolute;
-	left:1275px;
-	top:280px;
-}
-.Kreis_Falsch { 
-	border-radius:500px;
-	background-color:rgba(218.87500405311584, 30.095312297344208, 30.095312297344208, 1);
+	background-color:rgb(126, 12, 12);
 	width:150px;
 	height:150px;
 	position:absolute;
 	left:1275px;
 	top:609px;
+	
+	
 }
 .Kreis_QPH {
 	border-radius: 500px;
-	background-color: rgba(155.00000596046448, 153.00000607967377, 153.00000607967377, 1);
+	background-color: rgba(24, 92, 56, 0.85);
 	width: 150px;
 	height: 150px;
 	position: absolute;
@@ -127,7 +158,8 @@ button:hover {
 	top: 609px;
 	cursor: pointer;
 	pointer-events: auto;
-  
+	font-size: 48px;
+	
 }
 .Timer { 
 	color:rgba(255, 255, 255, 1);
@@ -141,18 +173,7 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.Richtig { 
-	color:rgba(255, 255, 255, 1);
-	width:130px;
-	height:48px;
-	position:absolute;
-	left:1285px;
-	top:232px;
-	font-family:Inter;
-	text-align:left;
-	font-size:40px;
-	letter-spacing:0;
-}
+
 .Start { 
 	color:rgba(255, 255, 255, 1);
 	width:109px;
@@ -165,17 +186,22 @@ button:hover {
 	font-size:40px;
 	letter-spacing:0;
 }
-.Falsch { 
-	color:rgba(255, 255, 255, 1);
-	width:123px;
-	height:48px;
+.Skip { 
+	background-color: rgb(126, 12, 12);
+	border-radius:500px;
+	color:rgb(0, 0, 0);
+	width:140px;
+	height:140px;
 	position:absolute;
-	left:1295px;
-	top:561px;
+	left:1280px;
+	top:615px;
 	font-family:Inter;
-	text-align:left;
+	text-align:center;
 	font-size:40px;
-	letter-spacing:0;
+	border: 3px solid #222;
+}
+.Skip:hover{
+	background-color: red;
 }
 .TPH { 
 	color:rgba(206.12500101327896, 53.248959481716156, 53.248959481716156, 1);
@@ -188,42 +214,27 @@ button:hover {
 	text-align:center;
 	font-size:40px;
 	letter-spacing:0;
+	border: 3px solid #222;
+	border-radius: 150px;
 }
-.RPH { 
-	color:rgba(255, 255, 255, 1);
-	width:81px;
-	height:48px;
+
+.QPH {
+	background-color: rgba(24, 92, 56, 0.85);
+	border-radius: 500px; 
+	color:rgb(0, 0, 0);
+	width: 140px;
+	height: 140px;
 	position:absolute;
-	left:1309px;
-	top:331px;
+	left: 30px;
+	top: 615px;
 	font-family:Inter;
-	text-align:left;
-	font-size:40px;
+	text-align:center;
+	font-size:24px;
 	letter-spacing:0;
+	border: 2px solid #222;
 }
-.WPH { 
-	color:rgba(255, 255, 255, 1);
-	width:93px;
-	height:48px;
-	position:absolute;
-	left:1303px;
-	top:660px;
-	font-family:Inter;
-	text-align:left;
-	font-size:40px;
-	letter-spacing:0;
-}
-.QPH { 
-	color:rgba(30.00000011175871, 30.00000011175871, 30.00000011175871, 1);
-	width:86px;
-	height:48px;
-	position:absolute;
-	left:59px;
-	top:660px;
-	font-family:Inter;
-	text-align:left;
-	font-size:40px;
-	letter-spacing:0;
+.QPH:hover{
+	background-color: rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
 }
 .Quest_Txt { 
 	color:rgba(255, 255, 255, 1);
