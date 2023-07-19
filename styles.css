@@ -50,10 +50,10 @@
 .Question_Box {
 	background-color: rgba(206, 53, 53, 0.100);
 	width: 785px;
-	height: 350px;
+	height: 360px;
 	position: absolute;
 	left: 317px;
-	top: 120px;
+	top: 110px;
 	text-align: center;
 	border-radius: 15px;
 	color: aliceblue;
