@@ -1,0 +1,205 @@
+.e30_68 { 
+	overflow:hidden;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+}
+.e30_27 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(255, 255, 255, 1);
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.Hintergrund_Bild { 
+	width:100vw;
+	height:100vh;
+	position:fixed;
+	left:0px;
+	top:0px;
+	min-width: 100%;
+    min-height: 100%;
+}
+.linke_Box { 
+	background-color:rgba(125.37500202655792, 62.165105044841766, 62.165105044841766, 0.4000000059604645);
+	width:13.88vw;
+	height:58.59vh;
+	position:absolute;
+	left:0px;
+	top:20.7vh;
+}
+.rechte_Box { 
+	background-color:rgba(125.37500202655792, 62.165105044841766, 62.165105044841766, 0.4000000059604645);
+	width:13.88vw;
+	height:58.59vh;
+	position:absolute;
+	left:86.11vw;
+	top:20.7vh;
+}
+.Question_Box { 
+	background-color:rgba(206, 53, 53, 0.300);
+	width:62.5vw;
+	height:29.29vh;
+	position:absolute;
+	left:18.4vw;
+	top:20.5vh;
+    text-align:center;
+    border-radius: 4px;
+    color: aliceblue;
+}
+.btn {
+	background-color: rgba(20, 174, 92, 0.300);
+	width: 27.77vw;
+	height: 9.76vh;
+	position: absolute;
+	left: 18.4vw;
+	border: 1px solid #222;
+	padding: 10px;
+	margin: 10px 0;
+	text-align: center;
+	border-radius: 4px;
+	cursor: pointer;
+	color: aliceblue;
+	font-size: 30px;
+}
+.btn:nth-child(1) {
+	top: 54.69vh;
+}
+.btn:nth-child(2) {
+	top: 54.69vh;
+	left: 53.19vw;
+}
+.btn:nth-child(3) {
+	top: 66.4vh;
+}
+.btn:nth-child(4) {
+	top: 66.4vh;
+	left: 53.19vw;
+}
+button:hover {
+    background-color:rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
+}
+.Score_Überschrift { 
+	color:rgba(255, 255, 255, 1);
+	width:9.02vw;
+	height:4.68vh;
+	position:absolute;
+	left:89.23vw;
+	top:22.65vh;
+	font-family: 'Orbitron', sans-serif;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+.Score_Kreis { 
+	border-radius:500px;
+	background-color:rgba(18.474213480949402, 227.37499594688416, 14.21093724668026, 1);
+	width:10.41vw;
+	height:14.64vh;
+	position:absolute;
+	left:88.54vw;
+	top:27.34vh;
+}
+.Score_Zahl { 
+	color:rgb(117, 18, 246);
+	width:5.62vw;
+	height:4.68vh;
+	position:absolute;
+	left:89.58vw;
+	top:32.32vh;
+	font-family: 'Orbitron', sans-serif;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+.Kreis_Timer { 
+	border-radius:500px;
+	background-color:rgba(155.24899899959564, 153.30838233232498, 153.30838233232498, 1);
+	width:10.41vw;
+	height:14.64vh;
+	position:absolute;
+	left:1.73vw;
+	top:27.34vh;
+}
+.Kreis_Skip { 
+	border-radius:500px;
+	background-color:rgba(218.87500405311584, 30.095312297344208, 30.095312297344208, 1);
+	width:10.41vw;
+	height:14.64vh;
+	position:absolute;
+	left:88.54vw;
+	top:59.47vh;
+}
+.Kreis_QPH {
+	border-radius: 500px;
+	background-color: rgba(155.00000596046448, 153.00000607967377, 153.00000607967377, 1);
+	width: 10.41vw;
+	height: 14.64vh;
+	position: absolute;
+	left: 1.73vw;
+	top: 59.47vh;
+	cursor: pointer;
+	pointer-events: auto;
+}
+.Timer { 
+    color:rgba(255, 255, 255, 1);
+    width:7.57vw;
+    height:4.68vh;
+    position:absolute;
+    left:3.12vw;
+    top:22.65vh;
+    font-family: 'Orbitron', sans-serif;
+    text-align:left;
+    font-size:40px;
+    letter-spacing:0;
+}
+.Timer_Zahl { 
+	color:rgba(255, 255, 255, 1);
+	width:3.68vw;
+	height:4.68vh;
+	position:absolute;
+	left:4.86vw;
+	top:32.32vh;
+	font-family: 'Orbitron', sans-serif;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+.Skip { 
+	color:rgba(255, 255, 255, 1);
+	width:5.34vw;
+	height:4.68vh;
+	position:absolute;
+	left:90.9vw;
+	top:64.58vh;
+	font-family: 'Orbitron', sans-serif;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+.QPH { 
+	color:rgba(255, 255, 255, 1);
+	width:8.26vw;
+	height:4.68vh;
+	position:absolute;
+	left:2.6vw;
+	top:64.58vh;
+	font-family: 'Orbitron', sans-serif;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}
+.QPH_Zahl { 
+	color:rgba(255, 255, 255, 1);
+	width:2.43vw;
+	height:4.68vh;
+	position:absolute;
+	left:5.86vw;
+	top:74.22vh;
+	font-family: 'Orbitron', sans-serif;
+	text-align:left;
+	font-size:40px;
+	letter-spacing:0;
+}

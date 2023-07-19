@@ -52,21 +52,22 @@ const questions = [
   
 ];
 
-const questionElement = document.getElementById("question-box");
-const answerButtonsElement = document.getElementById("answer-buttons");
-const timerElement = document.getElementById("timer");
-let shuffledQuestions, currentQuestionIndex;
-let score = 0;
-let countdown;
-let questionCount = 0;
-let gameEnded = false; // Neue Variable für das Spielende
-function startGame() {
-score = 0;
-shuffledQuestions = questions.sort(() => Math.random() - 0.5);
-currentQuestionIndex = 0;
-setNextQuestion();
-startTimer();
-}
+// Mit 'document.getElementById()' greift man auf die HTML-Elemente zu, die man für die Interaktion mit dem Nutzer benötigt.
+// Man speichert diese Elemente in Konstanten, damit man sie später im Code verwenden kann.
+const questionElement = document.getElementById("question-box");  // greift auf das HTML-Element mit der ID "question-box" zu
+const answerButtonsElement = document.getElementById("answer-buttons");  // greift auf das HTML-Element mit der ID "answer-buttons" zu
+const timerElement = document.getElementById("timer");  // greift auf das HTML-Element mit der ID "timer" zu
+const scoreElement = document.querySelector(".Score_Zahl");  // greift auf das erste HTML-Element mit der Klasse "Score_Zahl" zu
+const skipButton = document.getElementById("skip");  // greift auf das HTML-Element mit der ID "skip" zu
+const startButton = document.querySelector(".QPH");  // greift auf das erste HTML-Element mit der Klasse "QPH" zu
+
+// Hier legt man Variablen an, um den Zustand des Spiels zu verfolgen.
+let shuffledQuestions, currentQuestionIndex; // Diese Variablen speichern die gemischten Fragen und den aktuellen Index
+let score = 0; // Das speichert die Punktzahl
+let countdown; // Das speichert den Countdown-Timer
+let questionCount = 0; // Das speichert die Anzahl der bereits gestellten Fragen
+let gameEnded = false; // Das speichert, ob das Spiel beendet wurde
+
 function startTimer() {
 let timeLeft = 15;
 timerElement.innerText = `${timeLeft}`;
