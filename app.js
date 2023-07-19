@@ -1,53 +1,53 @@
 const questions = [
-    {
-    question: 'Wer ist der coolste?!',
-    answers: ['Rick', 'Popeye', 'Teletubby', 'Captain Hero'],
-    correctAnswer: 'Rick'
+  {
+  question: 'Wer ist der coolste?!',
+  answers: ['Rick', 'Popeye', 'Teletubby', 'Captain Hero'],
+  correctAnswer: 'Rick'
 },
 {
-    question: 'Welche Farbe hat die Black Order?',
-    answers: ['Blau', 'Grau', 'Lila', 'Schwarz'],
-    correctAnswer: 'Schwarz'
+  question: 'Welche Farbe hat die Black Order?',
+  answers: ['Blau', 'Grau', 'Lila', 'Schwarz'],
+  correctAnswer: 'Schwarz'
 },
 {
-    question: 'Wer ist Chef?',
-    answers: ['Garfield', 'Batman', 'Martin Dubb', 'Chefkoch'],
-    correctAnswer: 'Martin Dubb'
+  question: 'Wer ist Chef?',
+  answers: ['Garfield', 'Batman', 'Martin Dubb', 'Chefkoch'],
+  correctAnswer: 'Martin Dubb'
 },
 {
-    question: 'Ey man, wo ist mein Auto?',
-    answers: ['vor der Tür', 'Garage', 'Shaweet', 'Dude'],
-    correctAnswer: 'Dude'
+  question: 'Ey man, wo ist mein Auto?',
+  answers: ['vor der Tür', 'Garage', 'Shaweet', 'Dude'],
+  correctAnswer: 'Dude'
 },
 {
-    question: 'Was wächst nicht?',
-    answers: ['Unkraut', 'Bohnenranken', 'Wachs', 'Fuss'],
-    correctAnswer: 'Wachs'
+  question: 'Was wächst nicht?',
+  answers: ['Unkraut', 'Bohnenranken', 'Wachs', 'Fuss'],
+  correctAnswer: 'Wachs'
 },
 {
-    question: 'Wer war der letzte Kaiser Deutschlands?',
-    answers: ['Bismarck', 'Beckenbauer', 'Franz', 'Wilhelm'],
-    correctAnswer: 'Wilhelm'
+  question: 'Wer war der letzte Kaiser Deutschlands?',
+  answers: ['Bismarck', 'Beckenbauer', 'Franz', 'Wilhelm'],
+  correctAnswer: 'Wilhelm'
 },
 {
-    question: 'Wer ist der treuste Begleiter?',
-    answers: ['Snoopy', 'Morty', 'Robin', 'Donald Trump'],
-    correctAnswer: 'Morty'
+  question: 'Wer ist der treuste Begleiter?',
+  answers: ['Snoopy', 'Morty', 'Robin', 'Donald Trump'],
+  correctAnswer: 'Morty'
 },
 {
-    question: 'Wo brennts?',
-    answers: ['In der Hütte', 'Im Wasser', 'Am Hintern', 'Im Ofen'],
-    correctAnswer: 'Im Ofen'
+  question: 'Wo brennts?',
+  answers: ['In der Hütte', 'Im Wasser', 'Am Hintern', 'Im Ofen'],
+  correctAnswer: 'Im Ofen'
 },
 {
-    question: 'Warum mach ich das?',
-    answers: ['*Affe der sich die Augen zuhält*', 'Weil ichs kann!', 'Weiß ich selbst net...', 'Nächste Frage bitte!'],
-    correctAnswer: 'Weil ichs kann!'
+  question: 'Warum mach ich das?',
+  answers: ['*Affe der sich die Augen zuhält*', 'Weil ichs kann!', 'Weiß ich selbst net...', 'Nächste Frage bitte!'],
+  correctAnswer: 'Weil ichs kann!'
 },
 {
-    question: 'Na wie is das Quiz?',
-    answers: ['Welches Quiz?', 'Bahnhof', 'nope', 'Fahrrad'],
-    correctAnswer: 'Welches Quiz?'
+  question: 'Na wie is das Quiz?',
+  answers: ['Welches Quiz?', 'Bahnhof', 'nope', 'Fahrrad'],
+  correctAnswer: 'Welches Quiz?'
 }
 ];
 
@@ -74,9 +74,9 @@ setNextQuestion();
 startTimer();
 } else {
 if (!gameEnded) {
-  gameEnded = true;
-  alert(`Quiz beendet! - Final Score ${score} von 10.`);
-  startButton.innerText = "Start";
+gameEnded = true;
+alert(`Quiz beendet! - Final Score ${score} von 10.`);
+startButton.innerText = "Start";
 }
 }
 });
@@ -106,8 +106,8 @@ countdown = setInterval(() => {
 timeLeft--;
 timerElement.innerText = `${timeLeft}`;
 if (timeLeft === 0) {
-  clearInterval(countdown);
-  selectAnswer();
+clearInterval(countdown);
+selectAnswer();
 }
 }, 1000);
 }
@@ -121,7 +121,7 @@ const button = document.createElement("button");
 button.innerText = answer;
 button.classList.add("btn");
 if (answer === question.correctAnswer) {
-  button.dataset.correct = true;
+button.dataset.correct = true;
 }
 button.addEventListener("click", selectAnswer);
 answerButtonsElement.appendChild(button);
@@ -144,11 +144,11 @@ correct = false;  // Wenn die Zeit abläuft, wird die Antwort als falsch betrach
 // Überprüfen, ob eine Antwort ausgewählt wurde
 if (selectedButton && !gameEnded) {
 if (correct) {
-  score++;
-  scoreElement.textContent = `${score}/10`;
-  alert(`Richtig!`);
+score++;
+scoreElement.textContent = `${score}/10`;
+alert(`Richtig!`);
 } else {
-  alert(`Falsch!/Zu langsam! - Score unverändert.`);
+alert(`Falsch!/Zu langsam! - Score unverändert.`);
 }
 }
 
@@ -159,9 +159,9 @@ setNextQuestion();
 startTimer();
 } else {
 if (!gameEnded) {
-  gameEnded = true;
-  alert(`Quiz beendet! - Final Score ${score} von 10.`);
-  startButton.innerText = "Start";
+gameEnded = true;
+alert(`Quiz beendet! - Final Score ${score} von 10.`);
+startButton.innerText = "Start";
 }
 }
 
