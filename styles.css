@@ -80,7 +80,7 @@
 	height: 100px;
 	position: absolute;
 	left: 264px;
-	border: 1px solid #222;
+	border: 5px solid #ff000080;
 	padding: 10px;
 	margin: 10px 0;
 	text-align: center;
@@ -115,16 +115,17 @@ button:hover {
 }
 
 .Score_Überschrift { 
-	color:rgba(255, 255, 255, 1);
+	color:rgb(117, 18, 246);
 	width:130px;
 	height:48px;
 	position:absolute;
-	left:1290px;
+	left:1280px;
 	top:232px;
 	font-family:Inter;
 	text-align:left;
 	font-size:40px;
 	letter-spacing:0;
+	text-shadow: 2px 2px black;
 	font-family: 'Orbitron', sans-serif;
 }
 .Score_Kreis { 
@@ -135,6 +136,7 @@ button:hover {
 	position:absolute;
 	left:1275px;
 	top:280px;
+	border: 4px solid #000000;
 	font-family: 'Orbitron', sans-serif;
 }
 .Score_Zahl { 
@@ -142,7 +144,7 @@ button:hover {
 	width:81px;
 	height:48px;
 	position:absolute;
-	left:1308px;
+	left:1304px;
 	top:331px;
 	font-family:Inter;
 	text-align:center;
@@ -153,12 +155,14 @@ button:hover {
 
 .Kreis_Timer {
 	border-radius: 500px;
-	background-color: rgba(155.24899899959564, 153.30838233232498, 153.30838233232498, 1);
+	/*background-color: rgba(155.24899899959564, 153.30838233232498, 153.30838233232498, 1);*/
+	background-color: rgb(0, 0, 0);
 	width: 150px;
 	height: 150px;
 	position: absolute;
 	left: 25px;
 	top: 280px;
+	border: 3px solid #ff0000;
 }
 
 .Kreis_Skip {
@@ -186,7 +190,7 @@ button:hover {
 }
 
 .Timer {
-	color: rgba(255, 255, 255, 1);
+	color: rgb(255, 0, 0);
 	width: 109px;
 	height: 48px;
 	position: absolute;
@@ -196,6 +200,8 @@ button:hover {
 	text-align: left;
 	font-size: 40px;
 	letter-spacing: 0;
+	font-family: 'Orbitron', sans-serif;
+	text-shadow: 2px 2px black;
 }
 
 
@@ -224,7 +230,7 @@ button:hover {
 	font-family:Inter;
 	text-align:center;
 	font-size:40px;
-	border: 3px solid #222;
+	border: 4px solid #222;
 	font-family: 'Orbitron', sans-serif;
 }
 .Skip:hover{
@@ -232,17 +238,17 @@ button:hover {
 }
 
 .TPH {
-	color: rgba(206.12500101327896, 53.248959481716156, 53.248959481716156, 1);
+	color: rgb(255, 0, 0);
 	width: 81px;
 	height: 48px;
 	position: absolute;
-	left: 59px;
+	left: 60px;
 	top: 331px;
 	font-family: Inter;
 	text-align: center;
 	font-size: 40px;
 	letter-spacing: 0;
-	border: 3px solid #222;
+	border: 4px solid #ff0000;
 	border-radius: 150px;
 	font-family: 'Orbitron', sans-serif;
 }
@@ -260,7 +266,7 @@ button:hover {
 	text-align:center;
 	font-size:24px;
 	letter-spacing:0;
-	border: 2px solid #222;
+	border: 4px solid #222;
 	font-family: 'Orbitron', sans-serif;
 }
 .QPH:hover{
