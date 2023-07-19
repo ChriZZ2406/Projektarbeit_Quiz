@@ -5,7 +5,7 @@ const questions = [
   correctAnswer: 'Rick'
 },
 {
-  question: 'Welche Farbe hat die Black Order?',
+  question: 'Welche Farbe \n hat die Black Order?',
   answers: ['Blau', 'Grau', 'Lila', 'Schwarz'],
   correctAnswer: 'Schwarz'
 },
@@ -25,7 +25,7 @@ const questions = [
   correctAnswer: 'Wachs'
 },
 {
-  question: 'Wer war der letzte Kaiser Deutschlands?',
+  question: 'Wer war der \n letzte Kaiser Deutschlands?',
   answers: ['Bismarck', 'Beckenbauer', 'Franz', 'Wilhelm'],
   correctAnswer: 'Wilhelm'
 },
@@ -56,7 +56,7 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 const timerElement = document.getElementById("timer");
 const scoreElement = document.querySelector(".Score_Zahl");
 const skipButton = document.getElementById("skip");
-const startButton = document.querySelector(".QPH");
+const startButton = document.querySelector(".Start_Button");
 
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;

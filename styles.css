@@ -23,12 +23,6 @@
 	text-align: center;
 }
 
-.Hintergrund_Bild {
-	width: 100%;
-	height: auto;
-	position: fixed;
-}
-
 .linke_Box {
 	background-color: rgba(125.37500202655792, 62.165105044841766, 62.165105044841766, 0.4000000059604645);
 	width: 200px;
@@ -57,6 +51,7 @@
 	text-align: center;
 	border-radius: 15px;
 	color: aliceblue;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .Question_Txt {
@@ -70,6 +65,7 @@
 	text-align: center;
 	font-size: 33px;
 	letter-spacing: 0;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .btn {
@@ -78,7 +74,7 @@
 	height: 100px;
 	position: absolute;
 	left: 264px;
-	border: 1px solid #222;
+	border: 5px solid #222;
 	padding: 10px;
 	margin: 10px 0;
 	text-align: center;
@@ -86,7 +82,7 @@
 	cursor: pointer;
 	color: aliceblue;
 	font-size: 30px;
-	font-family: Inter;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .btn:nth-child(1) {
@@ -111,74 +107,7 @@ button:hover {
 	background-color: rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
 }
 
-.Score_Überschrift { 
-	color:rgba(255, 255, 255, 1);
-	width:130px;
-	height:48px;
-	position:absolute;
-	left:1290px;
-	top:232px;
-	font-family:Inter;
-	text-align:left;
-	font-size:40px;
-	letter-spacing:0;
-}
-.Score_Kreis { 
-	border-radius:500px;
-	background-color:rgba(18.474213480949402, 227.37499594688416, 14.21093724668026, 1);
-	width:150px;
-	height:150px;
-	position:absolute;
-	left:1275px;
-	top:280px;
-}
-.Score_Zahl { 
-	color:rgb(117, 18, 246);
-	width:81px;
-	height:48px;
-	position:absolute;
-	left:1308px;
-	top:331px;
-	font-family:Inter;
-	text-align:left;
-	font-size:40px;
-	letter-spacing:0;
-}
-
-.Kreis_Timer {
-	border-radius: 500px;
-	background-color: rgba(155.24899899959564, 153.30838233232498, 153.30838233232498, 1);
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	left: 25px;
-	top: 280px;
-}
-
-.Kreis_Skip {
-	border-radius:500px;
-	background-color:rgb(126, 12, 12);
-	width:150px;
-	height:150px;
-	position:absolute;
-	left:1275px;
-	top:609px;
-}
-
-.Kreis_QPH {
-	border-radius: 500px;
-	background-color: rgba(24, 92, 56, 0.85);
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	left: 25px;
-	top: 609px;
-	cursor: pointer;
-	pointer-events: auto;
-	font-size: 48px;
-}
-
-.Timer {
+.Timer_Überschrift {
 	color: rgba(255, 255, 255, 1);
 	width: 109px;
 	height: 48px;
@@ -189,41 +118,20 @@ button:hover {
 	text-align: left;
 	font-size: 40px;
 	letter-spacing: 0;
+	font-family: 'Orbitron', sans-serif;
 }
 
-
-.Start {
-	color: rgba(255, 255, 255, 1);
-	width: 109px;
-	height: 48px;
+.Timer_Kreis {
+	border-radius: 500px;
+	background-color: rgba(155.24899899959564, 153.30838233232498, 153.30838233232498, 1);
+	width: 150px;
+	height: 150px;
 	position: absolute;
-	left: 45px;
-	top: 561px;
-	font-family: Inter;
-	text-align: left;
-	font-size: 40px;
-	letter-spacing: 0;
+	left: 25px;
+	top: 280px;
 }
 
-.Skip {
-	background-color: rgb(126, 12, 12);
-	border-radius:500px;
-	color:rgb(0, 0, 0);
-	width:140px;
-	height:140px;
-	position:absolute;
-	left:1280px;
-	top:615px;
-	font-family:Inter;
-	text-align:center;
-	font-size:40px;
-	border: 3px solid #222;
-}
-.Skip:hover{
-	background-color: red;
-}
-
-.TPH {
+.Timer_Zahl {
 	color: rgba(206.12500101327896, 53.248959481716156, 53.248959481716156, 1);
 	width: 81px;
 	height: 48px;
@@ -238,28 +146,94 @@ button:hover {
 	border-radius: 150px;
 }
 
-.QPH {
-	background-color: rgba(24, 92, 56, 0.85);
-	border-radius: 500px; 
-	color:rgb(0, 0, 0);
-	width: 140px;
-	height: 140px;
+.Score_Überschrift { 
+	color:rgba(117, 18, 246, 1);
+	width: 130px;
+	height: 48px;
+	position: absolute;
+	left: 1290px;
+	text-align: left;
+	font-size: 40px;
+	letter-spacing: 0;
+	text-shadow: 2px 2px black;
+	font-family: 'Orbitron', sans-serif;
+}
+.Score_Kreis { 
+	border-radius: 500px;
+	background-color:rgba(18.474213480949402, 227.37499594688416, 14.21093724668026, 1);
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 1275px;
+	top: 280px;
+	border: 4px solid #000000;
+	font-family: 'Orbitron', sans-serif;
+}
+.Score_Zahl { 
+	color:rgb(117, 18, 246);
+	width:81px;
+	height:48px;
 	position:absolute;
-	left: 30px;
-	top: 615px;
-	font-family:Inter;
+	left:1304px;
+	top:331px;
 	text-align:center;
-	font-size:24px;
+	font-size:36px;
 	letter-spacing:0;
-	border: 2px solid #222;
-}
-.QPH:hover{
-	background-color: rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
-}
-.correct {
-	background: rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
+	font-family: 'Orbitron', sans-serif;
 }
 
-.incorrect {
-	background: rgba(206.12500101327896, 53.248959481716156, 53.248959481716156, 1);
+.Start_Schrift {
+	color:rgb(0, 0, 0, 1);
+	width: 109px;
+	height: 0px;
+	position:absolute;
+	left: 45px;
+	top: 654px;
+	text-align:center;
+	font-size: 40px;
+	letter-spacing: 0;
+	font-family: 'Orbitron', sans-serif;
+}
+.Start_Kreis {
+	border-radius: 500px;
+	background-color: rgba(24, 92, 56, 0.85);
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 25px;
+	top: 609px;
+	cursor: pointer;
+	pointer-events: auto;
+}
+.Start_Button {
+	border-radius: 500px;
+	background-color: rgba(24, 92, 56, 0.85);
+	width: 150px;
+	height: 150px;
+	position: absolute;
+	left: 25px;
+	top: 609px;
+	cursor: pointer;
+	pointer-events: auto;
+	font-size: 25px;
+	font-family: 'Orbitron', sans-serif;
+
+}
+
+.Skip_Button {
+	background-color: rgb(126, 12, 12);
+	border-radius:500px;
+	color:rgb(0, 0, 0);
+	width:140px;
+	height:140px;
+	position:absolute;
+	left:1280px;
+	top:615px;
+	text-align:center;
+	font-size:40px;
+	border: 4px solid #222;
+	font-family: 'Orbitron', sans-serif;
+}
+.Skip_Button:hover{
+	background-color: red;
 }
