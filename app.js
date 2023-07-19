@@ -41,12 +41,12 @@ const questions = [
 },
 {
   question: 'Ist der Himmel blau?',
-  answers: ['*Auf kein Fall, der is Scharlachrot!', 'Ja', 'Weiß ich selbst net...', 'Nein'],
+  answers: ['Ja', 'Nein'],
   correctAnswer: 'Ja'
 },
 {
   question: 'Ist dir das zu blöd?',
-  answers: ['Merkt man das?', 'Nein', 'Ja', 'Kuckuck'],
+  answers: ['Nein', 'Ja'],
   correctAnswer: 'Ja'
 }
 ];
