@@ -57,6 +57,7 @@
 	text-align: center;
 	border-radius: 15px;
 	color: aliceblue;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .Question_Txt {
@@ -70,6 +71,7 @@
 	text-align: center;
 	font-size: 33px;
 	letter-spacing: 0;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .btn {
@@ -87,6 +89,7 @@
 	color: aliceblue;
 	font-size: 30px;
 	font-family: Inter;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .btn:nth-child(1) {
@@ -122,6 +125,7 @@ button:hover {
 	text-align:left;
 	font-size:40px;
 	letter-spacing:0;
+	font-family: 'Orbitron', sans-serif;
 }
 .Score_Kreis { 
 	border-radius:500px;
@@ -131,6 +135,7 @@ button:hover {
 	position:absolute;
 	left:1275px;
 	top:280px;
+	font-family: 'Orbitron', sans-serif;
 }
 .Score_Zahl { 
 	color:rgb(117, 18, 246);
@@ -143,6 +148,7 @@ button:hover {
 	text-align:left;
 	font-size:40px;
 	letter-spacing:0;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .Kreis_Timer {
@@ -163,7 +169,7 @@ button:hover {
 	position:absolute;
 	left:1275px;
 	top:609px;
-}
+	}
 
 .Kreis_QPH {
 	border-radius: 500px;
@@ -176,6 +182,7 @@ button:hover {
 	cursor: pointer;
 	pointer-events: auto;
 	font-size: 48px;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .Timer {
@@ -218,6 +225,7 @@ button:hover {
 	text-align:center;
 	font-size:40px;
 	border: 3px solid #222;
+	font-family: 'Orbitron', sans-serif;
 }
 .Skip:hover{
 	background-color: red;
@@ -252,6 +260,7 @@ button:hover {
 	font-size:24px;
 	letter-spacing:0;
 	border: 2px solid #222;
+	font-family: 'Orbitron', sans-serif;
 }
 .QPH:hover{
 	background-color: rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
