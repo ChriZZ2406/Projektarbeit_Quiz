@@ -25,12 +25,12 @@ const questions = [
   correctAnswer: 'Wachs'
 },
 {
-  question: 'Wer war der \n letzte Kaiser \n Deutschlands?',
+  question: 'Wer war der letzte \n Kaiser Deutschlands?',
   answers: ['Bismarck', 'Beckenbauer', 'Franz', 'Wilhelm'],
   correctAnswer: 'Wilhelm'
 },
 {
-  question: 'Wer ist der \n treuste Begleiter?',
+  question: 'Wer ist der treuste Begleiter?',
   answers: ['Snoopy', 'Morty', 'Robin', 'Donald Trump'],
   correctAnswer: 'Morty'
 },
@@ -41,7 +41,7 @@ const questions = [
 },
 {
   question: 'Ist der Himmel blau?',
-  answers: ['Ne, Scharlachrot!', 'Ja', 'Nein'],
+  answers: ['Ja', 'Nein'],
   correctAnswer: 'Ja'
 },
 {
@@ -56,7 +56,7 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 const timerElement = document.getElementById("timer");
 const scoreElement = document.querySelector(".Score_Zahl");
 const skipButton = document.getElementById("skip");
-const startButton = document.querySelector(".Start_Button");
+const startButton = document.querySelector(".QPH");
 
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
@@ -82,7 +82,7 @@ startButton.innerText = "Start";
 });
 
 startButton.addEventListener("click", () => {
-startButton.innerText = "Live";
+startButton.innerText = "Running...";
 if (gameEnded || !shuffledQuestions) {
 startGame();
 }
