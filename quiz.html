@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz von CSF-Group</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+  <div class="alles_Box">
+    <div class="linke_Box"></div>
+    <div class="rechte_Box"></div>
+    <div class="Question_Box" id="question"></div>
+      <span class="Question_Txt" id="question-box">Starte das Quiz indem  <br>  du den Start Button <br> unten Links drückst!</span>
+    <div id="answer-buttons">
+      <button class="btn">A)</button>
+      <button class="btn">B)</button>
+      <button class="btn">C)</button>
+      <button class="btn">D)</button>
+    </div>
+    <div class="Timer_Kreis"></div>
+      <span  class="Timer_Überschrift">Timer</span>
+      <span  class="Timer_Zahl" id="timer"></span>
+    <div class="Score_Kreis"></div>
+      <span  class="Score_Überschrift">Score</span>
+      <span  class="Score_Zahl">0/10</span>
+    <div class="Skip_Kreis"></div>
+      <button class="Skip_Button" id="skip">Skip</button>
+    <div class="Start_Kreis"></div>
+      <button class="Start_Button">Start</button>
+   </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+
+</html>
