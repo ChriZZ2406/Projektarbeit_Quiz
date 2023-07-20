@@ -25,12 +25,12 @@ const questions = [
   correctAnswer: 'Wachs'
 },
 {
-  question: 'Wer war der \n letzte Kaiser Deutschlands?',
+  question: 'Wer war der \n letzte Kaiser \n Deutschlands?',
   answers: ['Bismarck', 'Beckenbauer', 'Franz', 'Wilhelm'],
   correctAnswer: 'Wilhelm'
 },
 {
-  question: 'Wer ist der treuste Begleiter?',
+  question: 'Wer ist der \n treuste Begleiter?',
   answers: ['Snoopy', 'Morty', 'Robin', 'Donald Trump'],
   correctAnswer: 'Morty'
 },
@@ -41,7 +41,7 @@ const questions = [
 },
 {
   question: 'Warum mach ich das?',
-  answers: ['*Affe der sich die Augen zuhält*', 'Weil ichs kann!', 'Weiß ich selbst net...', 'Nächste Frage bitte!'],
+  answers: ['*🙈*', 'Weil ichs kann!', 'Weiß ich selbst net...', 'Nächste Frage bitte!'],
   correctAnswer: 'Weil ichs kann!'
 },
 {
@@ -82,7 +82,7 @@ startButton.innerText = "Start";
 });
 
 startButton.addEventListener("click", () => {
-startButton.innerText = "Running...";
+startButton.innerText = "Live";
 if (gameEnded || !shuffledQuestions) {
 startGame();
 }

@@ -25,55 +25,53 @@
 
 .linke_Box {
 	background-color: rgba(125.37500202655792, 62.165105044841766, 62.165105044841766, 0.4000000059604645);
-	width: 200px;
-	height: 600px;
+	width: 100px;
+	height: 300px;
 	position: absolute;
-	left: 0 px;
-	top: 212px;
+	left: 250px;
+	top: 350px;
 }
 
 .rechte_Box {
 	background-color: rgba(125.37500202655792, 62.165105044841766, 62.165105044841766, 0.4000000059604645);
-	width: 200px;
-	height: 600px;
+	width: 100px;
+	height: 300px;
 	position: absolute;
-	left: 1240px;
-	top: 212px;
+	left: 1031px;
+	top: 350px;
 }
 
 .Question_Box {
 	background-color: rgba(206, 53, 53, 0.100);
-	width: 785px;
-	height: 350px;
+	width: 393px;
+	height: 175px;
 	position: absolute;
-	left: 317px;
-	top: 120px;
+	left: 500px;
+	top: 350px;
 	text-align: center;
 	border-radius: 15px;
 	color: aliceblue;
-	font-family: 'Orbitron', sans-serif;
 }
 
 .Question_Txt {
 	color: rgba(255, 255, 255, 1);
-	width: 800px;
-	height: 40px;
+	width: 400px;
+	height: 20px;
 	position: absolute;
-	left: 300px;
-	top: 225px;
-	font-family: Inter;
+	left: 490px;
+	top: 400px;
 	text-align: center;
-	font-size: 33px;
+	font-size: 16px;
 	letter-spacing: 0;
 	font-family: 'Orbitron', sans-serif;
 }
 
 .btn {
 	background-color: rgba(20, 174, 92, 0.300);
-	width: 350px;
-	height: 100px;
+	width: 175px;
+	height: 50px;
 	position: absolute;
-	left: 264px;
+	left: 475px;
 	border: 5px solid #222;
 	padding: 10px;
 	margin: 10px 0;
@@ -81,26 +79,26 @@
 	border-radius: 15px;
 	cursor: pointer;
 	color: aliceblue;
-	font-size: 30px;
+	font-size: 13px;
 	font-family: 'Orbitron', sans-serif;
 }
 
 .btn:nth-child(1) {
-	top: 520px;
+	top: 530px;
 }
 
 .btn:nth-child(2) {
-	top: 520px;
-	left: 800px;
+	top: 530px;
+	left: 743px;
 }
 
 .btn:nth-child(3) {
-	top: 660px;
+	top: 600px;
 }
 
 .btn:nth-child(4) {
-	top: 660px;
-	left: 800px;
+	top: 600px;
+	left: 743px;
 }
 
 button:hover {
@@ -108,52 +106,55 @@ button:hover {
 }
 
 .Timer_Überschrift {
-	color: rgba(255, 255, 255, 1);
-	width: 109px;
-	height: 48px;
+	color: rgba(255, 0, 0);
+	width: 55px;
+	height: 24px;
 	position: absolute;
-	left: 45px;
-	top: 232px;
-	font-family: Inter;
+	left: 270px;
+	top: 355px;
 	text-align: left;
-	font-size: 40px;
+	font-size: 19px;
 	letter-spacing: 0;
 	font-family: 'Orbitron', sans-serif;
+	text-shadow: 2px 2px black;
 }
 
 .Timer_Kreis {
 	border-radius: 500px;
-	background-color: rgba(155.24899899959564, 153.30838233232498, 153.30838233232498, 1);
-	width: 150px;
-	height: 150px;
+	background-color: rgba(0, 0, 0);
+	width: 70px;
+	height: 70px;
 	position: absolute;
-	left: 25px;
-	top: 280px;
+	left: 262px;
+	top: 385px;
+	border: 3px solid #ff0000;
 }
 
 .Timer_Zahl {
-	color: rgba(206.12500101327896, 53.248959481716156, 53.248959481716156, 1);
-	width: 81px;
-	height: 48px;
+	color: rgb(255, 0, 0);
+	width: 37px;
+	height: 19px;
 	position: absolute;
-	left: 59px;
-	top: 331px;
+	left: 277px;
+	top: 408px;
 	font-family: Inter;
 	text-align: center;
-	font-size: 40px;
+	font-size: 17px;
 	letter-spacing: 0;
-	border: 3px solid #222;
+	border: 4px solid #ff0000;
 	border-radius: 150px;
+	font-family: 'Orbitron', sans-serif;
 }
 
 .Score_Überschrift { 
 	color:rgba(117, 18, 246, 1);
-	width: 130px;
-	height: 48px;
+	width: 55px;
+	height: 24px;
 	position: absolute;
-	left: 1290px;
+	left: 1048px;
+	top: 355px;
 	text-align: left;
-	font-size: 40px;
+	font-size: 19px;
 	letter-spacing: 0;
 	text-shadow: 2px 2px black;
 	font-family: 'Orbitron', sans-serif;
@@ -161,79 +162,80 @@ button:hover {
 .Score_Kreis { 
 	border-radius: 500px;
 	background-color:rgba(18.474213480949402, 227.37499594688416, 14.21093724668026, 1);
-	width: 150px;
-	height: 150px;
+	width: 70px;
+	height: 70px;
 	position: absolute;
-	left: 1275px;
-	top: 280px;
+	left: 1045px;
+	top: 385px;
 	border: 4px solid #000000;
 	font-family: 'Orbitron', sans-serif;
 }
 .Score_Zahl { 
 	color:rgb(117, 18, 246);
-	width:81px;
-	height:48px;
-	position:absolute;
-	left:1304px;
-	top:331px;
+	width: 81px;
+	height: 48px;
+	position: absolute;
+	left: 1043px;
+	top: 413px;
 	text-align:center;
-	font-size:36px;
+	font-size: 17px;
 	letter-spacing:0;
 	font-family: 'Orbitron', sans-serif;
 }
 
-.Start_Schrift {
-	color:rgb(0, 0, 0, 1);
-	width: 109px;
-	height: 0px;
-	position:absolute;
-	left: 45px;
-	top: 654px;
-	text-align:center;
-	font-size: 40px;
-	letter-spacing: 0;
-	font-family: 'Orbitron', sans-serif;
-}
 .Start_Kreis {
 	border-radius: 500px;
 	background-color: rgba(24, 92, 56, 0.85);
-	width: 150px;
-	height: 150px;
+	width: 70px;
+	height: 70px;
 	position: absolute;
-	left: 25px;
-	top: 609px;
+	left: 265px;
+	top: 565px;
 	cursor: pointer;
 	pointer-events: auto;
 }
+
 .Start_Button {
-	border-radius: 500px;
 	background-color: rgba(24, 92, 56, 0.85);
-	width: 150px;
-	height: 150px;
-	position: absolute;
-	left: 25px;
-	top: 609px;
-	cursor: pointer;
-	pointer-events: auto;
-	font-size: 25px;
+	border-radius: 500px; 
+	color:rgb(0, 0, 0);
+	width: 70px;
+	height: 70px;
+	position:absolute;
+	left: 265px;
+	top: 565px;
+	text-align: center;
+	font-size: 17px;
+	letter-spacing: 0;
+	border: 4px solid #222;
 	font-family: 'Orbitron', sans-serif;
-
 }
-
+.Start_Button:hover {
+	background-color: rgba(20.000000707805157, 174.00000482797623, 92.00000211596489, 1);
+}
 .Skip_Button {
 	background-color: rgb(126, 12, 12);
 	border-radius:500px;
 	color:rgb(0, 0, 0);
-	width:140px;
-	height:140px;
+	width: 70px;
+	height: 70px;
 	position:absolute;
-	left:1280px;
-	top:615px;
-	text-align:center;
-	font-size:40px;
+	left: 1045px;
+	top: 565px;
+	text-align: center;
+	font-size: 17px;
 	border: 4px solid #222;
 	font-family: 'Orbitron', sans-serif;
 }
 .Skip_Button:hover{
 	background-color: red;
 }
+.Skip_Kreis {
+	border-radius:500px;
+	background-color:rgb(126, 12, 12);
+	width: 70px;
+	height: 70px;
+	position:absolute;
+	left: 1045px;
+	top: 565px;
+	}
