@@ -175,4 +175,5 @@ const questions = [
   }
   
   // startGame();  // Das Spiel startet nicht mehr automatisch beim Laden der Seite
+  // Final Edition 20.07.23
   
