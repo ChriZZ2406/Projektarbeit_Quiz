@@ -41,7 +41,7 @@ const questions = [
 },
 {
   question: 'Ist der Himmel blau?',
-  answers: ['Auf kein Fall, der ist Scharlachrot!', 'Ja', 'Nein'],
+  answers: ['Ne, Scharlachrot!', 'Ja', 'Nein'],
   correctAnswer: 'Ja'
 },
 {
