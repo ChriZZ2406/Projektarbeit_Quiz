@@ -82,7 +82,7 @@ startButton.innerText = "Start";
 });
 
 startButton.addEventListener("click", () => {
-startButton.innerText = "Live";
+startButton.innerText = "Live...";
 if (gameEnded || !shuffledQuestions) {
 startGame();
 }
